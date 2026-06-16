@@ -1,0 +1,49 @@
+name: ZenexReport
+version: 1.0.0
+api-version: 1.21
+main: com.zenex.report.ZenexReport
+author: ZenexPlugins
+description: 🛡️ Полная система модерации с защитой администрации
+depend: [ZenexAuth]
+softdepend: [PlaceholderAPI, DeluxeMenus, Vault]
+
+commands:
+  report:
+    description: Пожаловаться на игрока
+    usage: /report <игрок> <причина>
+    aliases: [жалоба, репорт]
+  
+  reports:
+    description: Просмотр жалоб
+    usage: /reports
+    aliases: [жалобы, репорты]
+  
+  punish:
+    description: Наказать игрока
+    usage: /punish <игрок> <ban|mute|kick|warn> <причина>
+    aliases: [наказать]
+  
+  history:
+    description: История наказаний игрока
+    usage: /history <игрок>
+    aliases: [история]
+  
+  zp:
+    description: Административные команды ZenexReport
+    usage: /zp <reload|stats|protection|admincode>
+    permission: zenexreport.admin
+    aliases: [zreport]
+
+permissions:
+  zenexreport.admin:
+    description: Административные права
+    default: op
+  zenexreport.moderator:
+    description: Права модератора
+    default: op
+  zenexreport.report:
+    description: Право жаловаться
+    default: true
+  zenexreport.bypass:
+    description: Обход наказаний
+    default: op

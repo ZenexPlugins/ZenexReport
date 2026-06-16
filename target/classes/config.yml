@@ -1,0 +1,128 @@
+# =====================================================
+# ZenexReport - Конфигурация
+# =====================================================
+
+# Включить плагин
+enabled: true
+
+# =====================================================
+# ЗАЩИТА АДМИНИСТРАЦИИ
+# =====================================================
+
+admin-protection:
+  # Требовать код при входе
+  enabled: true
+  # Длина кода
+  code-length: 4
+  # Время на ввод кода (секунды)
+  timeout: 30
+  # Количество попыток
+  max-attempts: 3
+  # Блокировка после неудачных попыток (секунды)
+  block-time: 300
+  # Сообщение при входе
+  enter-message: "&e🔐 Введите ваш 4-значный код администратора:"
+  # Сообщение при успехе
+  success-message: "&a✅ Код подтверждён! Добро пожаловать!"
+  # Сообщение при ошибке
+  error-message: "&c❌ Неверный код! Осталось попыток: {attempts}"
+  # Сообщение при блокировке
+  blocked-message: "&c❌ Вы заблокированы на {time} секунд!"
+
+# =====================================================
+# НАСТРОЙКИ НАКАЗАНИЙ
+# =====================================================
+
+punishments:
+  ban:
+    enabled: true
+    duration: -1
+    kick-message: "&cВы забанены!\n&7Причина: {reason}\n&7Администратор: {admin}"
+    broadcast: true
+    broadcast-message: "&c{player} &7был забанен администратором &c{admin}&7! Причина: &e{reason}"
+  
+  mute:
+    enabled: true
+    duration: 3600
+    kick-message: "&cВы замьючены!\n&7Причина: {reason}\n&7Администратор: {admin}"
+    broadcast: false
+    mute-message: "&cВы замьючены! Причина: {reason}"
+    unmute-message: "&aВы размьючены!"
+  
+  kick:
+    enabled: true
+    message: "&cВы были кикнуты!\n&7Причина: {reason}\n&7Администратор: {admin}"
+    broadcast: true
+    broadcast-message: "&c{player} &7был кикнут администратором &c{admin}&7! Причина: &e{reason}"
+  
+  warn:
+    enabled: true
+    max-warns: 5
+    warn-message: "&c⚠️ Вы получили предупреждение от &e{admin}&c! Причина: &e{reason}"
+    action-on-max: BAN
+    action-message: "&c❌ Вы получили {max} предупреждений и были забанены!"
+
+# =====================================================
+# НАСТРОЙКИ ЖАЛОБ
+# =====================================================
+
+reports:
+  # Время на рассмотрение жалобы (секунды)
+  timeout: 300
+  # Максимальное количество жалоб на игрока
+  max-reports: 3
+  # Отправлять уведомление при новой жалобе
+  notifications: true
+  # Уведомление для администраторов
+  notification-message: "&e📝 Новая жалоба от &6{reporter} &eна &6{reported}&e! Причина: &e{reason}"
+  # Автоматически наказывать при достижении лимита жалоб
+  auto-punish: true
+  auto-punish-type: BAN
+  auto-punish-reason: "Превышено количество жалоб"
+
+# =====================================================
+# НАСТРОЙКИ GUI (DeluxeMenus)
+# =====================================================
+
+gui:
+  # Использовать DeluxeMenus
+  use-deluxemenus: true
+  # Если false - использовать стандартный инвентарь
+  use-vanilla: false
+  
+  # Основное меню
+  main-menu: "reports_main.yml"
+  # Меню наказаний
+  punish-menu: "reports_punish.yml"
+  # Меню истории
+  history-menu: "reports_history.yml"
+  # Меню жалоб
+  reports-menu: "reports_list.yml"
+
+# =====================================================
+# НАСТРОЙКИ УВЕДОМЛЕНИЙ
+# =====================================================
+
+notifications:
+  # Discord Webhook
+  discord:
+    enabled: false
+    webhook-url: "https://discord.com/api/webhooks/..."
+    embed-color: 16711680
+    embed-title: "📝 Новая жалоба"
+    embed-footer: "ZenexReport v1.0.0"
+  
+  # Telegram Bot
+  telegram:
+    enabled: false
+    bot-token: "YOUR_BOT_TOKEN"
+    chat-id: 123456789
+
+# =====================================================
+# НАСТРОЙКИ БАЗЫ ДАННЫХ
+# =====================================================
+
+database:
+  type: sqlite
+  sqlite:
+    file: "ZenexReport.db"

@@ -1,0 +1,17 @@
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/command/ReportsCommand.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/protection/AdminProtectionManager.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/data/Report.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/data/AdminData.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/command/PunishCommand.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/listener/PunishmentListener.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/listener/AdminProtectionListener.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/command/HistoryCommand.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/manager/ReportManager.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/command/AdminCommand.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/listener/ReportListener.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/ZenexReport.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/manager/DatabaseManager.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/manager/PunishmentManager.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/data/Punishment.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/command/ReportCommand.java
+/storage/emulated/0/plugins/ZenexReport/src/main/java/com/zenex/report/manager/HistoryManager.java

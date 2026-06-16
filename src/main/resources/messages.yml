@@ -1,0 +1,73 @@
+# =====================================================
+# ZenexReport - Сообщения
+# =====================================================
+
+messages:
+  # === ОБЩИЕ ===
+  no-permission: "&c❌ У вас нет прав!"
+  player-not-found: "&c❌ Игрок не найден!"
+  reload: "&a✅ ZenexReport перезагружен!"
+  admin-only: "&c❌ Только для администраторов!"
+  
+  # === ЖАЛОБЫ ===
+  report-usage: "&cИспользование: &e/report <игрок> <причина>"
+  report-success: "&a✅ Жалоба отправлена! Администраторы рассмотрят её."
+  report-already: "&c❌ Вы уже жаловались на этого игрока!"
+  report-cooldown: "&c❌ Подождите {time} секунд!"
+  report-not-found: "&c❌ Жалоба не найдена!"
+  report-closed: "&a✅ Жалоба закрыта!"
+  
+  # === НАКАЗАНИЯ ===
+  punish-usage: "&cИспользование: &e/punish <игрок> <ban|mute|kick|warn> <причина>"
+  punish-success: "&a✅ {player} наказан! Тип: {type}"
+  punish-already: "&c❌ Игрок уже наказан!"
+  punish-not-found: "&c❌ Наказание не найдено!"
+  
+  # === БАН ===
+  ban-message: "&c❌ Вы забанены!\n&7Причина: {reason}\n&7Администратор: {admin}"
+  ban-broadcast: "&c{player} &7забанен &c{admin}&7! Причина: &e{reason}"
+  ban-already: "&c❌ Игрок уже забанен!"
+  
+  # === МУТ ===
+  mute-message: "&c❌ Вы замьючены!\n&7Причина: {reason}\n&7Администратор: {admin}"
+  mute-broadcast: "&c{player} &7замьючен &c{admin}&7! Причина: &e{reason}"
+  mute-already: "&c❌ Игрок уже замьючен!"
+  unmute-success: "&a✅ Игрок {player} размьючен!"
+  
+  # === КИК ===
+  kick-message: "&c❌ Вы были кикнуты!\n&7Причина: {reason}\n&7Администратор: {admin}"
+  kick-broadcast: "&c{player} &7кикнут &c{admin}&7! Причина: &e{reason}"
+  
+  # === ВАРН ===
+  warn-message: "&c⚠️ Вы получили предупреждение от {admin}! Причина: {reason}"
+  warn-success: "&a✅ Игрок {player} получил предупреждение!"
+  warn-max: "&c❌ Игрок достиг максимального количества предупреждений!"
+  
+  # === ИСТОРИЯ ===
+  history-title: "&6=== История наказаний {player} ==="
+  history-entry: "&e{type} &7- {reason} &7(Админ: {admin})"
+  history-none: "&eУ игрока нет наказаний!"
+  
+  # === КОД АДМИНИСТРАТОРА ===
+  admin-code-enter: "&e🔐 Введите ваш 4-значный код администратора:"
+  admin-code-success: "&a✅ Код подтверждён! Добро пожаловать!"
+  admin-code-error: "&c❌ Неверный код! Осталось попыток: {attempts}"
+  admin-code-blocked: "&c❌ Вы заблокированы на {time} секунд!"
+  admin-code-set: "&a✅ Код администратора установлен!"
+  
+  # === ГУИ ===
+  gui-title: "&6&lZenexReport - Управление"
+  gui-punish-title: "&c&lВыберите наказание"
+  gui-history-title: "&6&lИстория игрока"
+  gui-reports-title: "&6&lСписок жалоб"
+  
+  # === СТАТИСТИКА ===
+  stats-title: "&6=== Статистика ZenexReport ==="
+  stats-total-reports: "&7Всего жалоб: &e{reports}"
+  stats-total-punishments: "&7Всего наказаний: &e{punishments}"
+  stats-total-bans: "&7Банов: &e{bans}"
+  stats-total-mutes: "&7Мутов: &e{mutes}"
+  stats-total-kicks: "&7Киков: &e{kicks}"
+  stats-total-warns: "&7Предупреждений: &e{warns}"
+  stats-active-bans: "&7Активных банов: &e{active_bans}"
+  stats-active-mutes: "&7Активных мутов: &e{active_mutes}"
